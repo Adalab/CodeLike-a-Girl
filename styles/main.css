@@ -263,10 +263,10 @@
 
 /*Quiénes somos*/
 
-@media all and (max-width:768px) {
+/* @media all and (min-width:768px) { */
   section{
       width: 100%;
-      border: 2px solid red;
+     /* border: 2px solid red;*/
  }
   .tittle {
       color: #099D8D;
