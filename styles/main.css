@@ -5,6 +5,13 @@
   box-sizing: border-box;
   /* font-family: 'Rubik', sans-serif;*//*Cogerla para los títulos, deb. fort., menu (nav), hero y footer*/ 
 }
+.title {
+  color: #099D8D;
+  text-align: center;
+  margin: 60px 0 45px 0;
+  font-family: 'Rubik', sans-serif;
+  font-size: 24px;
+}
 
 /*Header*/
 .header__menu {
@@ -165,13 +172,7 @@
 }
 
 /*Team*/
-
-.title {
-  color:blue;
-  font-family: quicksand;
-  text-align: center;
-  margin: 90px; /* ÑAPA */
-}    
+   
 .team {
   display: flex;
   flex-direction: column;
@@ -181,6 +182,15 @@
 }
 .team-description{
   text-align: center;
+}
+@media all and (min-width: 768px) {
+  .team {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;       
+    align-items: center;
+    margin: 50px 100px;     
+  }
 }
 
 /*Fortalezas y debilidades*/
@@ -224,13 +234,13 @@
    padding: 40;
 }
 .strenghts__title {
-  color: purple;
+  color: #099D8D;
   text-align: center;
   margin-top: 20px;
   padding-top: 40px;
 }
 .weakness__title {
-  color: purple;
+  color: #099D8D;
   text-align: center;
   margin-top: 20px;
   padding-top: 40px; 
@@ -263,25 +273,18 @@
 
 /*Quiénes somos*/
 
-/* @media all and (min-width:768px) { */
+
   section{
-      width: 100%;
-     /* border: 2px solid red;*/
- }
-  .tittle {
-      color: #099D8D;
-      text-align: center;
-      margin: 45px 0 45px 0;
-      font-family: 'Rubik', sans-serif;
-      font-size: 24px;
- }
+    width: 100%;
+    /* border: 2px solid red;*/
+}
   .container-person {
-      display: flex;
-      width: 100%;
-      flex-wrap: no-wrap;
-      margin-bottom: 60px;
-     /*border: 1px solid orange;
-     */
+    display: flex;
+    width: 100%;
+    flex-wrap: no-wrap;
+    margin-bottom: 60px;
+    /*border: 1px solid orange;
+    */
  }
  /*.square {
       background:#b8b8b9;
@@ -291,12 +294,12 @@
  */
   .picture-person {
       display: block;
-     /*border: 20px solid #b8b8b9;
-     */
+      /*border: 20px solid #b8b8b9;
+      */
       border-radius: 8px;
-     /*border: 1px solid blue;
-     */
- }
+      /*border: 1px solid blue;
+      */
+  }
   .person {
       display: block;
       width: 205px;
@@ -306,7 +309,7 @@
       border: 10px solid #b8b8b9;
       border-radius: 8px;
       margin-top: 50px;
- }
+  }
   .person-reverse {
       border: 1px solid red;
       display: block;
@@ -317,12 +320,10 @@
       border: 10px solid #b8b8b9;
       border-radius: 8px;
       margin-top: 40px;
- }
+  }
   .great-person {
       text-align: left;
-      display: flex;
-      flex-wrap: wrap;
- }
+  }
   .about-person {
       font-family: 'Open Sans', sans-serif;
       max-width: 439px;
@@ -330,31 +331,30 @@
       margin-left: 45px;
       margin-right: 45px;
       margin-bottom: 15px;
- }
+  }
   .icons {
       color: #14d9c4;
       text-align: left;
       margin-left: 60px;
       margin-top: 15px;
-      margin-bottom: 60px;
+      margin-bottom: 0px;
       margin-right: auto;
       transform: scale(1.5);
       display: inline-block;
-      display: relative;
-      transform: translate (100px);
-     /*flex-wrap: wrap;
+      /* transform: translate (-100px); */
+      /*flex-wrap: wrap;
       text-align: left;
-     */
- }
+      */
+  }
   .container-person-reverse {
       display: flex;
       flex-direction: row-reverse;
- }
+  }
   .great-person-reverse {
       text-align: right;
       margin-right: 30px;
       margin-left: 20px 
- }
+  }
   .about-person-reverse {
       font-family: 'Open Sans', sans-serif;
       max-width: 439px;
@@ -362,7 +362,7 @@
       margin-left: 45px;
       margin-right: 30px;
       margin-bottom: 15px;
- }
+  }
   .icons-reverse {
       color: #14d9c4;
       text-align: left;
@@ -372,40 +372,84 @@
       margin-right: 50px;
       transform: scale(1.5);
       display: inline-block;
-      display: relative;
-      transform: translate (100px);
-     /*flex-wrap: wrap;
+      /*flex-wrap: wrap;
       text-align: left;
-     */
- }
+      */
+  }
+@media all and (min-width:768px) { 
+  .container-person {
+    display: flex;
+    align-items: center;
+  }
+  .container-person-reverse {
+    display: flex;
+    flex-direction: center;
+  }
+  .great-person {
+    text-align: left;
+   
+  }
+  .great-person-reverse {
+    text-align: right;
+    margin-right: 30px;
+    margin-left: 20px
+  }
+  .icons {
+    color: #14d9c4;
+    text-align: left;
+    margin-left: 60px;
+    margin-top: 15px;
+    margin-bottom: 60px;
+    margin-right: auto;
+    transform: scale(1.5) translate (100px);
+    display: inline-block;
+    position: relative;
+    /*flex-wrap: wrap;
+    text-align: left;
+    */
+  }
+  .icons-reverse {
+    color: #14d9c4;
+    text-align: left;
+    margin-left: auto;
+    margin-top: 15px;
+    margin-bottom: 60px;
+    margin-right: 50px;
+    transform: scale(1.5) translate (100px);
+    display: inline-block;
+    position: relative;
+
+    /*flex-wrap: wrap;
+    text-align: left;
+    */
+  }
 }
 
-/*Footer*/
+  /*Footer*/
 
-@media all and (max-width:768px) {
   .footer {
-      color: #b8b8b9;
-      text-align: center;
-      max-width: 100%;
+    color: #b8b8b9;
+    text-align: center;
+    max-width: 100%;
   }
   .footer__paragraph {    
-      margin: 30px auto;
+    margin: 30px auto;
   }    
   .footer__menu__nav__ul {
-      padding: 0; 
+    padding: 0; 
   }       
   .footer__menu__items { 
-      list-style-type: none;   
+    list-style-type: none;   
   }
-  .link_footer {
-      text-decoration: none;
-      color: #b8b8b9;
-      font-weight: bold;
+  .link__footer {
+    text-decoration: none;
+    color: #b8b8b9;
+    font-weight: bold;
   }
   .logo_adalab {
-      margin: 30px auto;
+    margin: 30px auto;
   }
-}
+
 @media all and (min-width:768px) and (max-width:1200px) {
   .footer {
       color: #b8b8b9;
@@ -429,11 +473,6 @@
   .footer__menu__items { 
       list-style-type: none; 
       margin: 10px 15px 10px auto;   
-  }
-  .link__footer {
-      text-decoration: none;
-      color: #b8b8b9;
-      font-weight: bold;  
   }
   .logo_adalab {
       margin: 30px 30px;
@@ -463,13 +502,7 @@
   }
   .footer__menu__items { 
       list-style-type: none; 
-      margin: 10px 20px 10px auto;   
-      
-  }
-  .link__footer {
-      text-decoration: none;
-      color: #b8b8b9;
-      font-weight: bold;  
+      margin: 10px 20px 10px auto;      
   }
   .logo_adalab {
       margin: 30px 30px;
