@@ -113,7 +113,7 @@
   background-image: url('../images/slide.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center right 30%;
+  background-position: top;
   position: relative;
 }
 .hero-container{
@@ -138,7 +138,6 @@
 @media all and (min-width: 1200px) {
   .hero-section{
     height: 490px;
-    margin-top: 60px;
   }
   .hero-container .hero-text {
       max-width: 507px;
@@ -148,7 +147,6 @@
 @media all and (min-width: 768px) and (max-width: 1200px) {
   .hero-section{
     height: 361px;
-    margin-top: 95px;
   }
   .hero-container .hero-text {
     max-width: 441px;
@@ -157,7 +155,6 @@
 
 @media all and (max-width: 768px) {
   .hero-section{
-    margin-top: 95px;
     height: 316px;
   }
   .hero-container .hero-text {
