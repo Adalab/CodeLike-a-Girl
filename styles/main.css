@@ -313,6 +313,40 @@ a.icons__link:hover {
   margin-bottom: 3px;
 }
 
+@media all and (min-width:768px){
+
+.article__container {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.reverse {
+  display:flex;
+  flex-direction: row-reverse;
+
+}
+.article__bio {
+  border: 2 px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 35px 0px 0px 30px;
+}
+
+.article__paragraph{
+  text-align: left;
+}
+.img__personal {
+  width: 205px;
+  height: 205px;
+}
+.fab {
+  padding: 15px 5px 0px 0px;
+}
+.fas{
+  padding: 15px 5px 0px 0px;
+}
   /*Footer*/
 
   .footer {
