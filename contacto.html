@@ -1,16 +1,95 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto_#CodeLike&lta&gtGirl</title>
+    <link rel="stylesheet" href="contacto.css">
+    <script src="https://kit.fontawesome.com/4679bfcb84.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
+    <header class="header__menu">
+        <div class="logo">
+            <!-- <img src="Images/airfly.png" alt="logoequipo"/> -->
+            <img src="images/bebasneue.png" alt="logoequipo" width="300px">
+        </div>
+        <nav class="header__menu__nav">
+            <ul class="nav_items">
+
+                <li class="header__menu__items">
+                    <a class="link" href="#equipo">EQUIPO</a>
+                </li>
+                <li class="header__menu__items">
+                    <a class="link" href="#quienes_somos">QUIÉNES SOMOS</a>
+                </li>
+                <li class="header__menu__items">
+                    <a class="link" href="contacto.html">CONTACTO</a>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main>
+        <section class="hero-section">
+        </section>
+        <section class="contact__section">
+            <div class="contacto__box">
+                <h1 class="contacto__title">Contacto
+                </h1>
+            </div>
+            <div class="text__contact__container">
+                <p class="text__contact">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate necessitatibus minima iste
+                    nisi quos cum deleniti dignissimos distinctio fuga laboriosam animi voluptate facere officiis, omnis
+                    odio? Aut, quas sunt.
+                </p>
+            </div>
+            <div class="text__campos__container">
+                <p class="text__campos">Todos los campos marcados con * son obligarorios
+                </p>
+            </div>
+            <div class="app">
+                <!-- ¿email? -->
+
+                <!-- atencion, modificar signup? -->
+                <form action="https://formspree.io/mgewoqyp/signup" method="post" class="app__form">
+                    <div class="app__row">
+                        <label for="fullName" class="app__label">Nombre completo *
+                        </label>
+                        <input type="text" id="fullName" name="fullName" class="app__field" placeholder="Nombre..."
+                            required>
+                    </div>
+                    <div class="app__row">
+                        <label for="emailAddress" class="app__label">Email *
+                        </label>
+                        <input type="email" id="emailAddress" name="emailAddress" class="app__field"
+                            placeholder="nombre.apellidos@mail.com" required>
+                    </div>
+                    <div class="app__row">
+                        <label for="phone" class="app__label">Teléfono
+                        </label>
+                        <!-- checkear --> <input type="text" id="phone" name="phone" class="app__field"
+                            placeholder="Ej: 123456789" required>
+                    </div>
+                    <div class="app__row">
+                        <label for="message" class="app__label">Mensaje *
+                        </label>
+                        <input type="text" id="message" name="message" class="app__field" class="message"
+                            placeholder="¿Qué necesitas?" required>
+                    </div>
+                    <div class="app__row">
+                        <input type="submit" value="Enviar" class="app__button">
+                    </div>
+                </form>
+            </div>
+
+        </section>
 
     </main>
 </body>
-<footer>
-
-</footer>
 
 </html>
