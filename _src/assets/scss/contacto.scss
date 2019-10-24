@@ -5,6 +5,8 @@
   box-sizing: border-box;
   max-width: 320px;
 
+  /* Hay que cambiar el color de los asteriscos y meter el footer */
+
   /* font-family: 'Rubik', sans-serif;*/ /*Cogerla para los títulos, deb. fort., menu (nav), hero y footer*/
 }
 .title {
@@ -142,27 +144,28 @@
 .contact__section {
 }
 .contacto__box {
-  background-color: cornflowerblue;
+  /* background-color: cornflowerblue; */
   margin: 30px auto 15px auto;
   text-transform: uppercase;
 }
 .contacto__title {
-  border: solid 1px green;
+  /* border: solid 1px green; */
+  color: #099d8ebd;
   justify-content: center;
   text-align: center;
 }
 .text__contact__container {
 }
 .text__contact {
-  background-color: coral;
+  /* background-color: coral; */
   margin: 15px 30px 0 30px;
 }
 .text__campos__container {
-  background-color: cornflowerblue;
+  /* background-color: cornflowerblue; */
   margin: 30px 0 60px 0;
 }
 .text__campos {
-  border: solid darkblue;
+  /* border: solid darkblue; */
   justify-content: center;
   text-align: center;
 }
@@ -194,19 +197,28 @@
   border: 1px solid grey;
   margin: 5px 15px 15px 15px;
   height: 45px;
-  width: 290px;
+  min-width: 290px;
+  padding-left: 15px;
 }
+/* Checkear la altura, anchura y padding-top: añadida etiqueta style en el html */
 #message {
+  padding-top: 15px;
   max-width: 290px;
   min-height: 105px;
   overflow: scroll;
 }
+
+/* comprobar margin top de 15px */
 .app__button {
+  background-color: #099d8ebd;
   font: inherit;
-
   text-transform: uppercase;
-
   border-radius: 0.25em;
-
   cursor: pointer;
+  min-width: 290px;
+  min-height: 45px;
+  margin: 15px 15px 60px 15px;
+}
+.input {
+  -webkit-appearance: none;
 }

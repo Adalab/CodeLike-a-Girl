@@ -1,0 +1,232 @@
+@charset "UTF-8";/*Globales*/* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 320px;
+ /* Hay que cambiar el color de los asteriscos y meter el footer */ /* font-family: 'Rubik', sans-serif;*/ /*Cogerla para los títulos, deb. fort., menu (nav), hero y footer*/;
+}
+
+.title {
+  color: rgba(68, 255, 236, 0.808);
+  text-align: center;
+  margin: 60px 0 45px 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+}/*Header*/.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 60px;
+  background-color: #099d8ebd;
+  z-index: 999;
+}
+
+.header__menu__items {
+  display: inline;
+  margin: 10px;
+  font-weight: bold;
+ /* arreglar que las letras no se salgan del borde */;
+}
+
+.logo {
+  margin: 5px;
+}
+
+.header__menu__nav {
+  position: relative;
+  top: 35px;
+}
+
+.link {
+  color: #a1ca9b;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #eb636b;
+}/*Hero*/.hero-section {
+  width: 100vw;
+  background-image: url("../images/contact_slide.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+}/* MAIN */.contacto__box {
+ /* background-color: cornflowerblue; */
+  margin: 30px auto 15px auto;
+  text-transform: uppercase;
+}
+
+.contacto__title {
+ /* border: solid 1px green; */
+  color: #099d8ebd;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.text__contact {
+ /* background-color: coral; */
+  margin: 15px 30px 0 30px;
+}
+
+.text__campos__container {
+ /* background-color: cornflowerblue; */
+  margin: 30px 0 60px 0;
+}
+
+.text__campos {
+ /* border: solid darkblue; */
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}/* FORMULARIO/APPLICATION */.app {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}/* > FIELDS */.app__label {
+  display: block;
+  margin: 0 0 0 15px;
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  text-align: left;
+}
+
+.app__field {
+ /* background-color: hotpink; */
+  font: inherit;
+  border: 1px solid grey;
+  margin: 5px 15px 15px 15px;
+  height: 45px;
+  min-width: 290px;
+  padding-left: 15px;
+}/* Checkear la altura, anchura y padding-top: añadida etiqueta style en el html */#message {
+  padding-top: 15px;
+  max-width: 290px;
+  min-height: 105px;
+  overflow: scroll;
+}/* comprobar margin top de 15px */.app__button {
+  background-color: #099d8ebd;
+  font: inherit;
+  text-transform: uppercase;
+  border-radius: 0.25em;
+  cursor: pointer;
+  min-width: 290px;
+  min-height: 45px;
+  margin: 15px 15px 60px 15px;
+}
+
+.input {
+  -webkit-appearance: none;
+}
+
+@media all and (min-width: 768px) and (max-width: 1200px) {
+  .header__menu {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    background-color: #099d8d;
+  }
+
+  .header__menu__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: white;
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    top: 60px;
+    background-color: #14d9c5c9;
+  }
+
+  .link {
+    color: white;
+    text-decoration: none;
+  }
+
+  .hero-section {
+    height: 361px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .hero-section {
+    height: 490px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .header__menu {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 60px;
+    background-color: #099d8ebd;
+  }
+
+  .header__menu__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: white;
+    position: fixed;
+    width: 100vw;
+    height: 35px;
+    top: 60px;
+    background-color: #14d9c5c9;
+  }
+
+  .header__menu__items {
+    color: white;
+    margin: 10px;
+    font-weight: bold;
+  }
+
+  .link {
+    color: white;
+    text-decoration: none;
+  }
+
+  .link:hover {
+    color: #eb636b;
+  }
+
+  ul {
+    padding: 0%;
+  }
+
+  .hero-section {
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=contacto.css.map */

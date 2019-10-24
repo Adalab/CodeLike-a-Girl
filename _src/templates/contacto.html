@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Contacto_#CodeLike&lta&gtGirl</title>
-    <link rel="stylesheet" href="contacto.css" />
+    <link rel="stylesheet" href="./assets/css/contacto.css" />
     <script
       src="https://kit.fontawesome.com/4679bfcb84.js"
       crossorigin="anonymous"
@@ -15,8 +15,8 @@
   <body>
     <header class="header__menu">
       <div class="logo">
-        <!-- <img src="Images/airfly.png" alt="logoequipo"/> -->
-        <img src="images/bebasneue.png" alt="logoequipo" width="300px" />
+        <!-- <img src="Images/airfly.png" alt="logoequipo" /> -->
+        <img src="assets/images/bebasneue.png" alt="logoequipo" width="300px" />
       </div>
       <nav class="header__menu__nav">
         <ul class="nav_items">
@@ -85,27 +85,30 @@
               />
             </div>
             <div class="app__row">
-              <label for="phone" class="app__label">Teléfono </label>
+              <label for="telephone" class="app__label">Teléfono </label>
               <!-- checkear -->
               <input
-                type="text"
-                id="phone"
-                name="phone"
+                type="tel"
+                id="telephone"
+                name="telephone"
                 class="app__field"
                 placeholder="Ej: 123456789"
-                required
               />
             </div>
+            <!-- Hacer que el cuadro de Mensaje sea más grande -->
             <div class="app__row">
-              <label for="message" class="app__label">Mensaje * </label>
-              <input
-                type="text"
-                id="message"
-                name="message"
+              <label for="comments" class="app__label">Mensaje * </label>
+              <textarea
+                id="comments"
+                name="comments"
                 class="app__field"
                 placeholder="¿Qué necesitas?"
+                rows="8"
+                cols="30"
+                style="min-height:105px; max-width: 290px; padding-top: 15px"
                 required
-              />
+              >
+              </textarea>
             </div>
             <div class="app__row">
               <input type="submit" value="Enviar" class="app__button" />
