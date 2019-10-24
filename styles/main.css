@@ -23,7 +23,7 @@
   height: 60px;
   background-color:#099d8d;
   z-index: 999;
-  opacity: 0.93;
+  opacity: 0.90;
 }
 .header__menu__items {
   display: inline;
@@ -169,6 +169,7 @@
     margin: auto 15px;
     -webkit-transform: translateY(50%);
     transform: translateY(50%);
+    background-color: rgba(255, 255,255, 1);
   }
   .hero-container .hero-text h2{
     margin: 15px 15px;
@@ -219,60 +220,60 @@
   box-sizing: border-box;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   position:relative;
   width: 100%;
-  align-items: center;
-  text-align: center;
   background-color: #f1f1f1;
+  
 }
 .strengths {
-  text-align: center;
-  /* border: 1px solid black; */
+   /* border: 1px solid black; */
   width: 40%;
-  padding: 40; 
+  padding: 45px 0 60px 0;
+
 }
 .weakness { 
-  text-align: center;
-  /* border: 1px solid black; */
    width: 40%;
-   padding: 40;
+   padding: 45px 0 60px 0;
+   
 }
 .strenghts__title {
   color: #099D8D;
   text-align: center;
-  margin-top: 20px;
-  padding-top: 40px;
+
 }
 .weakness__title {
   color: #099D8D;
   text-align: center;
-  margin-top: 20px;
-  padding-top: 40px; 
+ 
 }
 .strengths__text {
-  padding: 10px 0 15px;
+ 
   text-align: center;
 }
 .weakness__text {
-  padding: 10px 0 15px;
+
   text-align: center;
 }
 
-@media all and (max-width:768px) {
+/*mobile*/
+@media all and (max-width:767px) {
 
   .central-container__sw{
     flex-direction: column;
+    align-items: center;
   }
   .strengths {
-    height: 350px;
+    /* height: 350px; */
     width: 300px;
-    padding: 10px;
+    padding:30px 0 30px 0;
+   
   }
   .weakness { 
-    height: 350px;
+    /* height: 350px; */
     width: 300px;
-    padding: 10px;
-  }
+    padding-bottom: 45px;
+  } 
 }
 
 /*Quiénes somos*/
@@ -320,15 +321,74 @@ a.icons__link:hover {
   margin-bottom: 3px;
 }
 
+@media all and (min-width:768px) {
+
+.article__container {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.reverse__article {
+  display:flex;
+  flex-direction: row-reverse;
+
+}
+.article__bio {
+  border: 2 px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 35px 0px 0px 30px;
+}
+.reverse__bio {
+  align-items: flex-end;
+  padding: 35px 30px 0px 0px;
+
+}
+
+.article__paragraph{
+  text-align: left;
+}
+.reverse__paragraph {
+  text-align: right;
+}
+.img__personal {
+  width: 205px;
+  height: 205px;
+}
+.fab {
+  padding: 15px 5px 0px 0px;
+}
+.fas {
+  padding: 15px 5px 0px 0px;
+}
+}
+
+@media all and (min-width:1200px) {
+  .img__personal {
+    width: 278px;
+    height: 278px;
+  }
+  .article__paragraph{
+    max-width: 439px;
+  }
+  .reverse__paragraph {
+    max-width: 439px;
+  }
+
+}
+
   /*Footer*/
 
   .footer {
     color: #b8b8b9;
+    border-top: solid 1px #54585a;
     text-align: center;
     max-width: 100%;
   }
   .footer__paragraph {    
-    margin: 30px auto;
+    margin: 30px auto 20px auto;
   }    
   .footer__menu__nav__ul {
     padding: 0; 
@@ -338,43 +398,45 @@ a.icons__link:hover {
   }
   .link__footer {
     text-decoration: none;
-    color: #b8b8b9;
-    font-weight: bold;
+    color: #54585a;
   }
   .logo_adalab {
-    margin: 30px auto;
+    width: 115.9px;
+    height: 45px;
+    margin: 30px auto 45px auto;
   }
 
 @media all and (min-width:768px) and (max-width:1200px) {
   .footer {
       color: #b8b8b9;
+      border-top: solid 1px #54585a;
       max-width: 100%;
       position: relative;
-      bottom: 0;      
+      bottom: 0; 
+      padding-top: 30px;
+      padding-bottom: 60px;   
   }
   .footer__paragraph {    
-      margin: 30px 30px;
-      display: flex;
-      align-items: flex-start;
-  }    
-  .footer__menu__nav__ul {
-      padding: 0; 
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      right: 30px;
-      top: 10px;   
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto 15px 8vw;
   }
+  .footer__menu__nav__ul {
+    position: absolute;
+    right: 8vw;
+    top: 30px;
+    text-align: right;
+    line-height: 180%; 
+    font-size: 14px;  
+  } 
   .footer__menu__items { 
-      list-style-type: none; 
-      margin: 10px 15px 10px auto;   
+    list-style-type: none;     
   }
   .logo_adalab {
-      margin: 30px 30px;
-      display: flex;
-      align-items: flex-start;
+    margin: 0 0 0 8vw;
+    display: flex;
+    align-items: flex-start;
   }
-}
 @media all and (min-width:1200px) {
   .footer {
       color: #b8b8b9;
@@ -405,11 +467,3 @@ a.icons__link:hover {
       align-items: flex-start;
   }
 }
-
-
-
-
-
-
-
-
