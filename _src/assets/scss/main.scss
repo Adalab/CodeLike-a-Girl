@@ -1,3 +1,6 @@
+@import "pages/about-us";
+
+
 /*Globales*/
 * {
 	font-family: 'Open Sans', sans-serif;
@@ -276,108 +279,7 @@
 	} 
   }
   
-  /*Quiénes somos*/
   
-  .article__container {
-	text-align: center;
-	width: 80%;
-	margin: auto;
-  }
-  .img__personal {
-	width: 180px;
-	height: 180px;
-	background-size: contain;
-	border-radius: 10px;
-	border: 5px solid grey;
-	margin: 30px 0 15px 0; 
-  }
-  .h3__name {
-	margin: 0 0 15px 0;
-  }
-  .article__paragraph {
-	color: #54585a;
-  }
-  
-  .icons__link {
-  color: #099d8d;
-  
-  }
-  a.icons__link:hover {
-	color: #fabada;
-  }
-  
-  .fab {
-	padding: 15px 5px;
-  }
-  .fas{
-	padding: 15px 5px;
-  }
-  .dot {
-	height: 3px;
-	width: 3px;
-	background-color: black;
-	border-radius: 50%;
-	display: inline-block;
-	margin-bottom: 3px;
-  }
-  
-  @media all and (min-width:768px) {
-  
-  .article__container {
-	border: 2px solid black;
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-  }
-  .reverse__article {
-	display:flex;
-	flex-direction: row-reverse;
-  
-  }
-  .article__bio {
-	border: 2 px solid red;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	padding: 35px 0px 0px 30px;
-  }
-  .reverse__bio {
-	align-items: flex-end;
-	padding: 35px 30px 0px 0px;
-  
-  }
-  
-  .article__paragraph{
-	text-align: left;
-  }
-  .reverse__paragraph {
-	text-align: right;
-  }
-  .img__personal {
-	width: 205px;
-	height: 205px;
-  }
-  .fab {
-	padding: 15px 5px 0px 0px;
-  }
-  .fas {
-	padding: 15px 5px 0px 0px;
-  }
-  }
-  
-  @media all and (min-width:1200px) {
-	.img__personal {
-	  width: 278px;
-	  height: 278px;
-	}
-	.article__paragraph{
-	  max-width: 439px;
-	}
-	.reverse__paragraph {
-	  max-width: 439px;
-	}
-  
-  }
   
 	/*Footer*/
   

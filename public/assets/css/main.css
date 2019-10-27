@@ -1,4 +1,50 @@
-@charset "UTF-8";/*Globales*/* {
+@charset "UTF-8";
+
+.aboutus__container {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.aboutus__container__img {
+  width: 180px;
+  height: 180px;
+  background-size: contain;
+  border-radius: 10px;
+  border: 5px solid grey;
+  margin: 30px 0 15px 0;
+}
+
+.aboutus__container__bio__h3 {
+  margin: 0 0 15px 0;
+}
+
+.aboutus__container__bio__paragraph {
+  color: #54585a;
+}
+
+.aboutus__container__bio__link {
+  color: #099d8d;
+}
+
+.aboutus__container__bio__link:hover {
+  color: #fabada;
+}/*PREGUNTAR A MIGUEL QUÉ HACER CON LOS FAB, LOS FAS Y LOS DOT */.fab {
+  padding: 15px 5px;
+}
+
+.fas {
+  padding: 15px 5px;
+}
+
+.dot {
+  height: 3px;
+  width: 3px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 3px;
+}/*Globales*/* {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -157,53 +203,7 @@
 
 .weakness__text {
   text-align: center;
-}/*mobile*//*Quiénes somos*/.article__container {
-  text-align: center;
-  width: 80%;
-  margin: auto;
-}
-
-.img__personal {
-  width: 180px;
-  height: 180px;
-  background-size: contain;
-  border-radius: 10px;
-  border: 5px solid grey;
-  margin: 30px 0 15px 0;
-}
-
-.h3__name {
-  margin: 0 0 15px 0;
-}
-
-.article__paragraph {
-  color: #54585a;
-}
-
-.icons__link {
-  color: #099d8d;
-}
-
-a.icons__link:hover {
-  color: #fabada;
-}
-
-.fab {
-  padding: 15px 5px;
-}
-
-.fas {
-  padding: 15px 5px;
-}
-
-.dot {
-  height: 3px;
-  width: 3px;
-  background-color: black;
-  border-radius: 50%;
-  display: inline-block;
-  margin-bottom: 3px;
-}/*Footer*/.footer {
+}/*mobile*//*Footer*/.footer {
   color: #b8b8b9;
   border-top: solid 1px #54585a;
   text-align: center;
@@ -231,6 +231,94 @@ a.icons__link:hover {
   width: 115.9px;
   height: 45px;
   margin: 30px auto 45px auto;
+}
+
+@media all and (min-width: 768px) {
+  .aboutus__container {
+    border: 2px solid black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .aboutus__container:nth-child(odd) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .aboutus__container__img {
+    width: 205px;
+    height: 205px;
+  }
+
+  .aboutus__container__bio {
+    border: 2 px solid red;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 35px 0px 0px 30px;
+  }
+
+  .aboutus__container__bio:nth-child(odd) {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding: 35px 30px 0px 0px;
+  }
+
+  .aboutus__container__bio__paragraph {
+    text-align: left;
+  }
+
+  .aboutus__container__bio__paragraph:nth-child(odd) {
+    text-align: right;
+  }
+
+  .fab {
+    padding: 15px 5px 0px 0px;
+  }
+
+  .fas {
+    padding: 15px 5px 0px 0px;
+  }
+
+  .team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 50px 100px;
+  }
 }
 
 @media all and (min-width: 768px) and (max-width: 1200px) {
@@ -319,91 +407,6 @@ a.icons__link:hover {
   }
 }
 
-@media all and (min-width: 768px) {
-  .team {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin: 50px 100px;
-  }
-
-  .article__container {
-    border: 2px solid black;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-  }
-
-  .reverse__article {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
-  }
-
-  .article__bio {
-    border: 2 px solid red;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    padding: 35px 0px 0px 30px;
-  }
-
-  .reverse__bio {
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    padding: 35px 30px 0px 0px;
-  }
-
-  .article__paragraph {
-    text-align: left;
-  }
-
-  .reverse__paragraph {
-    text-align: right;
-  }
-
-  .img__personal {
-    width: 205px;
-    height: 205px;
-  }
-
-  .fab {
-    padding: 15px 5px 0px 0px;
-  }
-
-  .fas {
-    padding: 15px 5px 0px 0px;
-  }
-}
-
 @media all and (min-width: 768px) and (max-width: 1200px) and (min-width: 1200px) {
   .footer {
     color: #b8b8b9;
@@ -453,25 +456,21 @@ a.icons__link:hover {
 }
 
 @media all and (min-width: 1200px) {
+  .aboutus__container__img {
+    width: 278px;
+    height: 278px;
+  }
+
+  .aboutus__container__bio__paragraph {
+    max-width: 439px;
+  }
+
   .hero-section {
     height: 490px;
   }
 
   .hero-container .hero-text {
     max-width: 507px;
-  }
-
-  .img__personal {
-    width: 278px;
-    height: 278px;
-  }
-
-  .article__paragraph {
-    max-width: 439px;
-  }
-
-  .reverse__paragraph {
-    max-width: 439px;
   }
 }
 

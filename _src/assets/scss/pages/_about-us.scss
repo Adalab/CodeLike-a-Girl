@@ -1,0 +1,121 @@
+.aboutus__container {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  @media all and (min-width: 768px) {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  &:nth-child(odd) {
+    @media all and (min-width: 768px) {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+    }
+  }
+  &__img {
+    width: 180px;
+    height: 180px;
+    background-size: contain;
+    border-radius: 10px;
+    border: 5px solid grey;
+    margin: 30px 0 15px 0;
+
+    @media all and (min-width: 768px) {
+      width: 205px;
+      height: 205px;
+    }
+
+    @media all and (min-width: 1200px) {
+      width: 278px;
+      height: 278px;
+    }
+  }
+
+  &__bio {
+    @media all and (min-width: 768px) {
+      border: 2 px solid red;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 35px 0px 0px 30px;
+    &:nth-child(odd) {
+        align-items: flex-end;
+        padding: 35px 30px 0px 0px;
+      }
+    }
+
+    &__h3 {
+      margin: 0 0 15px 0;
+    }
+
+    &__paragraph {
+      color: #54585a;
+      @media all and (min-width: 768px) {
+        text-align: left;
+      }
+      &:nth-child(odd) {
+        @media all and (min-width: 768px) {
+          text-align: right;
+        }
+      }
+
+      @media all and (min-width: 1200px) {
+        max-width: 439px;
+      }
+    }
+
+    &__link {
+      color: #099d8d;
+
+      &:hover {
+        color: #fabada;
+      }
+    }
+  }
+}
+/*PREGUNTAR A MIGUEL QUÉ HACER CON LOS FAB, LOS FAS Y LOS DOT */
+
+.fab {
+  padding: 15px 5px;
+  @media all and (min-width: 768px) {
+    padding: 15px 5px 0px 0px;
+  }
+}
+.fas {
+  padding: 15px 5px;
+  @media all and (min-width: 768px) {
+    padding: 15px 5px 0px 0px;
+  }
+}
+.dot {
+  height: 3px;
+  width: 3px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 3px;
+}
+
+//   @media all and (min-width:768px) {
+
+//   .reverse__article {
+// 	display:flex;
+//     flex-direction: row-reverse;
+//   }
+//   .reverse__bio {
+// 	align-items: flex-end;
+// 	padding: 35px 30px 0px 0px;
+//   }
+//   .reverse__paragraph {
+// 	text-align: right;
+//   }
+//   }
+
+// @media all and (min-width:1200px) {
+// 	.reverse__paragraph {
+// 	  max-width: 439px;
+// 	}
+// }
