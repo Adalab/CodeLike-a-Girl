@@ -1,4 +1,41 @@
-@charset "UTF-8";/*Globales*/* {
+@charset "UTF-8";/*Hero*/.hero__section {
+  width: 100vw;
+  background-image: url("../images/slide.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+  height: 316px;
+}
+
+.hero__section__container {
+  max-width: 924px;
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  position: relative;
+}
+
+.hero__section__container__text {
+  background-color: rgba(255, 255, 255, 0.8);
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+  width: calc(100% - 30px);
+ /* ELVA REVISA ESTE CÓDIGO PLEASE!!!!
+    margin: auto 15px;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+    background-color: rgba(255, 255, 255, 1);*/;
+}
+
+.hero__section__container__text h2 {
+  margin: 15px 30px;
+  font-family: sans-serif;
+  text-align: left;
+ /* ELVA REVISA TAMBIÉN ESTE CÓDIGO PORFIS
+		  margin: 15px 15px; */;
+}/*Globales*/* {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -52,34 +89,6 @@
 
 .link:hover {
   color: #eb636b;
-}/*Hero*/.hero-section {
-  width: 100vw;
-  background-image: url("../images/slide.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  position: relative;
-}
-
-.hero-container {
-  max-width: 924px;
-  width: 100%;
-  height: 100%;
-  margin: 0px auto;
-  position: relative;
-}
-
-.hero-container .hero-text {
-  background-color: rgba(255, 255, 255, 0.8);
-  bottom: 0px;
-  position: absolute;
-  width: 100%;
-}
-
-.hero-container .hero-text h2 {
-  margin: 15px 30px;
-  font-family: sans-serif;
-  text-align: left;
 }/*Team*/.team {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -234,6 +243,20 @@ a.icons__link:hover {
 }
 
 @media all and (min-width: 768px) and (max-width: 1200px) {
+  .hero__section {
+    height: 490px;
+ /* ELVA MIRA ESTA ALTURA QUE NO SABEMOS CUÁL ES LA BUENA PORFI
+		height: 361px; */;
+  }
+
+  .hero__section__container__text {
+    max-width: 441px;
+  }
+
+  .hero__section__container__text {
+    max-width: 507px;
+  }
+
   .header__menu {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -265,14 +288,6 @@ a.icons__link:hover {
   .link {
     color: white;
     text-decoration: none;
-  }
-
-  .hero-section {
-    height: 361px;
-  }
-
-  .hero-container .hero-text {
-    max-width: 441px;
   }
 
   .footer {
@@ -453,14 +468,6 @@ a.icons__link:hover {
 }
 
 @media all and (min-width: 1200px) {
-  .hero-section {
-    height: 490px;
-  }
-
-  .hero-container .hero-text {
-    max-width: 507px;
-  }
-
   .img__personal {
     width: 278px;
     height: 278px;
@@ -521,22 +528,6 @@ a.icons__link:hover {
 
   ul {
     padding: 0%;
-  }
-
-  .hero-section {
-    height: 316px;
-  }
-
-  .hero-container .hero-text {
-    width: calc(100% - 30px);
-    margin: auto 15px;
-    -webkit-transform: translateY(50%);
-    transform: translateY(50%);
-    background-color: white;
-  }
-
-  .hero-container .hero-text h2 {
-    margin: 15px 15px;
   }
 }
 
