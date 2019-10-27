@@ -18,6 +18,7 @@
 }
 
 .footer__menu__ul__items__link {
+  text-transform: capitalize;
   text-decoration: none;
   color: #54585a;
 }
@@ -321,9 +322,11 @@ a.icons__link:hover {
 }
  */@media all and (min-width: 768px) and (max-width: 1200px) {
   .footer {
+    max-width: 100%;
     position: relative;
-    bottom: 0px;
-    padding: 30px 0 60px 0;
+    bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 60px;
   }
 
   .footer__paragraph {
@@ -343,10 +346,6 @@ a.icons__link:hover {
     text-align: right;
     line-height: 180%;
     font-size: 14px;
-  }
-
-  .footer__menu__ul__items {
-    list-style-type: none;
   }
 
   .footer__logo__adalab {
@@ -519,7 +518,6 @@ a.icons__link:hover {
   }
 
   .footer__menu__ul__items {
-    list-style-type: none;
     margin: 10px 20px 10px auto;
   }
 
