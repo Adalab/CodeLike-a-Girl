@@ -1,6 +1,10 @@
+/* GLOBALES */
 @import "pages/contacto.scss";
+@import "layout/footer";
+@import "components/hero";
+@import "pages/home.scss";
 
-/*Globales*/
+/* HEAD */
 * {
   font-family: "Open Sans", sans-serif;
   margin: 0;
@@ -366,7 +370,7 @@ a.icons__link:hover {
 }
 
 /*Footer*/
-
+/* 
 .footer {
   color: #b8b8b9;
   border-top: solid 1px #54585a;
@@ -454,3 +458,4 @@ a.icons__link:hover {
     }
   }
 }
+ */
