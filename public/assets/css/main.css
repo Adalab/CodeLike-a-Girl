@@ -242,6 +242,105 @@ a.icons__link:hover {
   margin: 30px auto 45px auto;
 }
 
+@media all and (min-width: 768px) {
+  .team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 50px 100px;
+  }
+
+  .sw__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .sw__container__strengthsweakness {
+    width: 40%;
+    padding: 45px 0 60px 0;
+  }
+
+  .article__container {
+    border: 2px solid black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .reverse__article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+
+  .article__bio {
+    border: 2 px solid red;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 35px 0px 0px 30px;
+  }
+
+  .reverse__bio {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding: 35px 30px 0px 0px;
+  }
+
+  .article__paragraph {
+    text-align: left;
+  }
+
+  .reverse__paragraph {
+    text-align: right;
+  }
+
+  .img__personal {
+    width: 205px;
+    height: 205px;
+  }
+
+  .fab {
+    padding: 15px 5px 0px 0px;
+  }
+
+  .fas {
+    padding: 15px 5px 0px 0px;
+  }
+}
+
 @media all and (min-width: 768px) and (max-width: 1200px) {
   .hero__section {
     height: 490px;
@@ -331,91 +430,6 @@ a.icons__link:hover {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-  }
-}
-
-@media all and (min-width: 768px) {
-  .team {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin: 50px 100px;
-  }
-
-  .article__container {
-    border: 2px solid black;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-  }
-
-  .reverse__article {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
-  }
-
-  .article__bio {
-    border: 2 px solid red;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    padding: 35px 0px 0px 30px;
-  }
-
-  .reverse__bio {
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    padding: 35px 30px 0px 0px;
-  }
-
-  .article__paragraph {
-    text-align: left;
-  }
-
-  .reverse__paragraph {
-    text-align: right;
-  }
-
-  .img__personal {
-    width: 205px;
-    height: 205px;
-  }
-
-  .fab {
-    padding: 15px 5px 0px 0px;
-  }
-
-  .fas {
-    padding: 15px 5px 0px 0px;
   }
 }
 
@@ -528,30 +542,6 @@ a.icons__link:hover {
 
   ul {
     padding: 0%;
-  }
-}
-
-@media all and (max-width: 767px) {
-  .central-container__sw {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  .strengths {
- /* height: 350px; */
-    width: 300px;
-    padding: 30px 0 30px 0;
-  }
-
-  .weakness {
- /* height: 350px; */
-    width: 300px;
-    padding-bottom: 45px;
   }
 }
 
