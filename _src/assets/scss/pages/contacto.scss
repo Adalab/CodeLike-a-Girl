@@ -3,9 +3,6 @@
   font-family: "Open Sans", sans-serif;
   margin: 0;
   box-sizing: border-box;
-  max-width: 320px;
-
-  /* Hay que cambiar el color de los asteriscos y meter el footer */
 
   /* font-family: 'Rubik', sans-serif;*/ /*Cogerla para los títulos, deb. fort., menu (nav), hero y footer*/
 }
@@ -44,6 +41,7 @@
 .link {
   color: #a1ca9b;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .link:hover {
   color: #eb636b;
@@ -113,13 +111,8 @@
 
 /*Hero*/
 
-.hero-section {
-  width: 100vw;
+.page__contact .hero-section {
   background-image: url("../images/contact_slide.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  position: relative;
 }
 
 @media all and (max-width: 768px) {
@@ -201,7 +194,7 @@
   padding-left: 15px;
 }
 /* Checkear la altura, anchura y padding-top: añadida etiqueta style en el html */
-#message {
+.message {
   padding-top: 15px;
   max-width: 290px;
   min-height: 105px;
