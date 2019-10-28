@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-@charset "UTF-8";/*Footer*/.footer {
+@charset "UTF-8";/* GLOBALES *//* HEAD *//*Footer*/.footer {
   color: #b8b8b9;
   border-top: solid 1px #54585a;
   text-align: center;
@@ -19,19 +18,91 @@
 }
 
 .footer__menu__ul__items__link {
-  text-transform: capitalize;
+  text-decoration: none;
+  color: #54585a;
+}/* 
+.footer__paragraph {
+  margin: 30px auto 20px auto;
+}
+.footer__menu__nav__ul {
+  padding: 0;
+}
+.footer__menu__items {
+  list-style-type: none;
+}
+.link__footer {
   text-decoration: none;
   color: #54585a;
 }
-
-.footer__logo__adalab {
+.logo_adalab {
   width: 115.9px;
   height: 45px;
   margin: 30px auto 45px auto;
-}/* GLOBALES */* {
-  font-family: "Open Sans", sans-serif;
-=======
-@charset "UTF-8";/*Hero*/.hero__section {
+}
+
+@media all and (min-width: 768px) and (max-width: 1200px) {
+  .footer {
+    color: #b8b8b9;
+    border-top: solid 1px #54585a;
+    max-width: 100%;
+    position: relative;
+    bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  .footer__paragraph {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto 15px 8vw;
+  }
+  .footer__menu__nav__ul {
+    position: absolute;
+    right: 8vw;
+    top: 30px;
+    text-align: right;
+    line-height: 180%;
+    font-size: 14px;
+  }
+  .footer__menu__items {
+    list-style-type: none;
+  }
+  .logo_adalab {
+    margin: 0 0 0 8vw;
+    display: flex;
+    align-items: flex-start;
+  }
+  @media all and (min-width: 1200px) {
+    .footer {
+      color: #b8b8b9;
+      max-width: 100%;
+      position: relative;
+      bottom: 0;
+    }
+    .footer__paragraph {
+      margin: 30px 50px;
+      display: flex;
+      align-items: flex-start;
+    }
+    .footer__menu__nav__ul {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: 30px;
+      top: 10px;
+    }
+    .footer__menu__items {
+      list-style-type: none;
+      margin: 10px 20px 10px auto;
+    }
+    .logo_adalab {
+      margin: 30px 30px;
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+}
+ *//*Hero*/.hero__section {
   width: 100vw;
   background-image: url("../images/slide.jpg");
   background-size: cover;
@@ -68,9 +139,76 @@
   text-align: left;
  /* ELVA REVISA TAMBIÉN ESTE CÓDIGO PORFIS
 		  margin: 15px 15px; */;
-}/*Globales*/* {
-  font-family: 'Open Sans', sans-serif;
->>>>>>> 38ab7602b929d1b0bc69015a3fa54877aabd2371
+}
+
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.team__description {
+  text-align: center;
+}
+
+.sw__detail {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: white;
+  width: 27px;
+  height: 27px;
+  margin: auto;
+  display: block;
+  position: relative;
+  -webkit-transform: translateY(50%) rotate(45deg);
+  transform: translateY(50%) rotate(45deg);
+  z-index: 980;
+}
+
+.sw__container {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.sw__container__strengthsweakness {
+  width: 300px;
+  padding: 30px 0 30px 0;
+}
+
+.sw__container__strengthsweakness__title {
+  color: #099D8D;
+  text-align: center;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -272,7 +410,6 @@ a.icons__link:hover {
   margin: 30px auto 45px auto;
 }
 
-<<<<<<< HEAD
 @media all and (min-width: 768px) and (max-width: 1200px) {
   .footer {
     color: #b8b8b9;
@@ -337,73 +474,23 @@ a.icons__link:hover {
 }
  */@media all and (min-width: 768px) and (max-width: 1200px) {
   .footer {
-    max-width: 100%;
     position: relative;
-    bottom: 0;
-    padding-top: 30px;
-    padding-bottom: 60px;
+    bottom: 0px;
+    padding: 30px 0 60px 0;
   }
 
-  .footer__paragraph {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    margin: 0 auto 15px 8vw;
+  .hero__section {
+    height: 490px;
+ /* ELVA MIRA ESTA ALTURA QUE NO SABEMOS CUÁL ES LA BUENA PORFI
+		height: 361px; */;
   }
 
-  .footer__menu__ul {
-    position: absolute;
-    right: 8vw;
-    top: 30px;
-    text-align: right;
-    line-height: 180%;
-    font-size: 14px;
+  .hero__section__container__text {
+    max-width: 441px;
   }
 
-  .footer__logo__adalab {
-    margin: 0 0 0 8vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-  }
-
-  .header__menu {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    position: fixed;
-    width: 100vw;
-    height: 60px;
-    background-color: #099d8d;
-  }
-
-  .header__menu__nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    color: white;
-    position: fixed;
-    width: 100vw;
-    height: 35px;
-    top: 60px;
-    background-color: #14d9c4;
-  }
-
-  .link {
-    color: white;
-    text-decoration: none;
+  .hero__section__container__text {
+    max-width: 507px;
   }
 
   .hero-section {
@@ -415,8 +502,6 @@ a.icons__link:hover {
   }
 }
 
-=======
->>>>>>> 38ab7602b929d1b0bc69015a3fa54877aabd2371
 @media all and (min-width: 768px) {
   .team {
     display: -webkit-box;
@@ -446,6 +531,22 @@ a.icons__link:hover {
   .sw__container__strengthsweakness {
     width: 40%;
     padding: 45px 0 60px 0;
+  }
+
+  .team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 50px 100px;
   }
 
   .article__container {
@@ -516,24 +617,7 @@ a.icons__link:hover {
   }
 }
 
-<<<<<<< HEAD
-@media all and (min-width: 1200px) {
-=======
-@media all and (min-width: 768px) and (max-width: 1200px) {
-  .hero__section {
-    height: 490px;
- /* ELVA MIRA ESTA ALTURA QUE NO SABEMOS CUÁL ES LA BUENA PORFI
-		height: 361px; */;
-  }
-
-  .hero__section__container__text {
-    max-width: 441px;
-  }
-
-  .hero__section__container__text {
-    max-width: 507px;
-  }
-
+@media all and (max-width: 768px) and (min-width: 768px) and (max-width: 1200px) {
   .header__menu {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -566,110 +650,9 @@ a.icons__link:hover {
     color: white;
     text-decoration: none;
   }
-
-  .footer {
-    color: #b8b8b9;
-    border-top: solid 1px #54585a;
-    max-width: 100%;
-    position: relative;
-    bottom: 0;
-    padding-top: 30px;
-    padding-bottom: 60px;
-  }
-
-  .footer__paragraph {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    margin: 0 auto 15px 8vw;
-  }
-
-  .footer__menu__nav__ul {
-    position: absolute;
-    right: 8vw;
-    top: 30px;
-    text-align: right;
-    line-height: 180%;
-    font-size: 14px;
-  }
-
-  .footer__menu__items {
-    list-style-type: none;
-  }
-
-  .logo_adalab {
-    margin: 0 0 0 8vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-  }
 }
 
-@media all and (min-width: 768px) and (max-width: 1200px) and (min-width: 1200px) {
->>>>>>> 38ab7602b929d1b0bc69015a3fa54877aabd2371
-  .footer {
-    color: #b8b8b9;
-    max-width: 100%;
-    position: relative;
-    bottom: 0;
-  }
-
-  .footer__paragraph {
-    margin: 30px 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-  }
-
-  .footer__menu__ul {
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    position: absolute;
-    right: 30px;
-    top: 10px;
-  }
-
-  .footer__menu__ul__items {
-    margin: 10px 20px 10px auto;
-  }
-
-  .footer__logo__adalab {
-    margin: 30px 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-  }
-
-<<<<<<< HEAD
-  .hero-section {
-    height: 490px;
-  }
-
-  .hero-container .hero-text {
-    max-width: 507px;
-  }
-
-=======
 @media all and (min-width: 1200px) {
->>>>>>> 38ab7602b929d1b0bc69015a3fa54877aabd2371
   .img__personal {
     width: 278px;
     height: 278px;
@@ -726,10 +709,103 @@ a.icons__link:hover {
 
   .link:hover {
     color: #eb636b;
+  }/*Team*//*Fortalezas y debilidades*//*Quiénes somos*/  .article__container {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  .hero-container .hero-text {
+    max-width: 507px;
+  }
+
+  .hero-section {
+    height: 316px;
+  }
+
+  .hero-container .hero-text {
+    width: calc(100% - 30px);
+    margin: auto 15px;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+    background-color: white;
+  }
+
+  .hero-container .hero-text h2 {
+    margin: 15px 15px;
+  }
+}
+
+@media all and (max-width: 768px) and (max-width: 768px) {
+  .header__menu {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 60px;
+    background-color: #099d8d;
+  }
+
+  .header__menu__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: white;
+    position: fixed;
+    width: 100vw;
+    height: 45px;
+    top: 60px;
+    background-color: #14d9c4;
+  }
+
+  .header__menu__items {
+    color: white;
+    margin: 10px;
+    font-size: 16px;
+  }
+
+  .link {
+    color: white;
+    text-decoration: none;
+  }
+
+  .link:hover {
+    color: #eb636b;
   }
 
   ul {
     padding: 0%;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .central-container__sw {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .strengths {
+ /* height: 350px; */
+    width: 300px;
+    padding: 30px 0 30px 0;
+  }
+
+  .weakness {
+ /* height: 350px; */
+    width: 300px;
+    padding-bottom: 45px;
   }
 }
 
