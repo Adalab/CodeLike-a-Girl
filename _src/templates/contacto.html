@@ -1,121 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Contacto_#CodeLike&lta&gtGirl</title>
-    <link rel="stylesheet" href="./assets/css/contacto.css" />
-    <script
-      src="https://kit.fontawesome.com/4679bfcb84.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-
+  <partial src="_head.html" title="Contacto_#CodeLike&lta&gtGirl" cssHref="./assets/css/contacto.css"></partial>
   <body>
-    <header class="header__menu">
-      <div class="logo">
-        <!-- <img src="Images/airfly.png" alt="logoequipo" /> -->
-        <img src="assets/images/bebasneue.png" alt="logoequipo" width="300px" />
-      </div>
-      <nav class="header__menu__nav">
-        <ul class="nav_items">
-          <li class="header__menu__items">
-            <a class="link" href="#equipo">EQUIPO</a>
-          </li>
-          <li class="header__menu__items">
-            <a class="link" href="#quienes_somos">QUIÉNES SOMOS</a>
-          </li>
-          <li class="header__menu__items">
-            <a class="link" href="contacto.html">CONTACTO</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <partial src="_header.html"></partial>
     <main>
       <section class="hero-section"></section>
       <section class="contact__section">
-        <div class="contacto__box">
-          <h1 class="contacto__title">Contacto</h1>
-        </div>
-        <div class="text__contact__container">
-          <p class="text__contact">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-            cupiditate necessitatibus minima iste nisi quos cum deleniti
-            dignissimos distinctio fuga laboriosam animi voluptate facere
-            officiis, omnis odio? Aut, quas sunt.
-          </p>
-        </div>
-        <div class="text__campos__container">
-          <p class="text__campos">
-            Todos los campos marcados con * son obligarorios
-          </p>
-        </div>
-        <div class="app">
-          <!-- ¿email? -->
-
-          <!-- atencion, modificar signup? -->
-          <form
-            action="https://formspree.io/mgewoqyp/signup"
-            method="post"
-            class="app__form"
-          >
-            <div class="app__row">
-              <label for="fullName" class="app__label"
-                >Nombre completo *
-              </label>
-              <input
-                type="text"
-                id="fullName"
-                name="fullName"
-                class="app__field"
-                placeholder="Nombre..."
-                required
-              />
-            </div>
-            <div class="app__row">
-              <label for="emailAddress" class="app__label">Email * </label>
-              <input
-                type="email"
-                id="emailAddress"
-                name="emailAddress"
-                class="app__field"
-                placeholder="nombre.apellidos@mail.com"
-                required
-              />
-            </div>
-            <div class="app__row">
-              <label for="telephone" class="app__label">Teléfono </label>
-              <!-- checkear -->
-              <input
-                type="tel"
-                id="telephone"
-                name="telephone"
-                class="app__field"
-                placeholder="Ej: 123456789"
-              />
-            </div>
-            <!-- Hacer que el cuadro de Mensaje sea más grande -->
-            <div class="app__row">
-              <label for="comments" class="app__label">Mensaje * </label>
-              <textarea
-                id="comments"
-                name="comments"
-                class="app__field"
-                placeholder="¿Qué necesitas?"
-                rows="8"
-                cols="30"
-                style="min-height:105px; max-width: 290px; padding-top: 15px"
-                required
-              >
-              </textarea>
-            </div>
-            <div class="app__row">
-              <input type="submit" value="Enviar" class="app__button" />
-            </div>
-          </form>
-        </div>
+        <partial src="_contact_desc.html"></partial>
+        <partial src="_contact_form.html"></partial>
       </section>
     </main>
+    <partial src="_footer.html"></partial>
   </body>
 </html>
