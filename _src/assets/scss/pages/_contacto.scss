@@ -1,0 +1,72 @@
+.asterisco {
+  color: #14d9c5c9;
+}
+
+.contacto {
+  &__box {
+    margin: 30px auto 15px auto;
+    text-transform: uppercase;
+
+    &__title {
+      color: #099d8ebd;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    &__p {
+      margin: 15px 30px 0 30px;
+    }
+  }
+
+  &__campos {
+    /* background-color: cornflowerblue; */
+    margin: 30px 0 60px 0;
+
+    &__p {
+      /* border: solid darkblue; */
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  &__app {
+    justify-content: center;
+    text-align: center;
+    &__form {
+      &__row {
+        &__label {
+          display: block;
+          margin: 0 0 0 15px;
+          justify-content: left;
+          text-align: left;
+        }
+        &__field {
+          font: inherit;
+          border: 1px solid grey;
+          margin: 5px 15px 15px 15px;
+          height: 45px;
+          min-width: 290px;
+          padding-left: 15px;
+          -webkit-appearance: none;
+          &__message {
+            padding-top: 15px;
+            max-width: 290px;
+            min-height: 105px;
+            overflow: scroll;
+          }
+          &__button {
+            background-color: #099d8ebd;
+            font: inherit;
+            text-transform: uppercase;
+            border-radius: 0.25em;
+            cursor: pointer;
+            min-width: 290px;
+            min-height: 45px;
+            margin: 15px 15px 60px 15px;
+          }
+        }
+      }
+    }
+  }
+}

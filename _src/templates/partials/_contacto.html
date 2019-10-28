@@ -1,0 +1,88 @@
+<section class="contacto">
+  <div class="contacto__box">
+    <h1 class="contacto__box__title">Contacto</h1>
+  </div>
+  <div class="contacto__text">
+    <p class="contacto__text_p">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate
+      necessitatibus minima iste nisi quos cum deleniti dignissimos distinctio
+      fuga laboriosam animi voluptate facere officiis, omnis odio? Aut, quas
+      sunt.
+    </p>
+  </div>
+  <div class="contacto__campos">
+    <p class="contacto__campos__p">
+      Todos los campos marcados con
+      <span class="asterisco">*</span> son obligarorios
+    </p>
+  </div>
+  <div class="contacto__app">
+    <form
+      class="contacto__app__form"
+      action="https://formspree.io/mgewoqyp/signup"
+      method="post"
+    >
+      <div class="contacto__app__form__row">
+        <label for="fullName" class="contacto__app__form__row__label"
+          >Nombre completo <span class="asterisco">*</span>
+        </label>
+        <input
+          type="text"
+          id="fullName"
+          name="fullName"
+          class="contacto__app__form__row__field"
+          placeholder="Nombre..."
+          required
+        />
+      </div>
+      <div class="contacto__app__form__row">
+        <label for="emailAddress" class="contacto__app__form__row__label"
+          >Email <span class="asterisco">*</span>
+        </label>
+        <input
+          type="email"
+          id="emailAddress"
+          name="emailAddress"
+          class="contacto__app__form__row__field"
+          placeholder="nombre.apellidos@mail.com"
+          required
+        />
+      </div>
+      <div class="contacto__app__form__row">
+        <label for="telephone" class="contacto__app__form__row__label"
+          >Teléfono
+        </label>
+        <!-- checkear -->
+        <input
+          type="tel"
+          id="telephone"
+          name="telephone"
+          class="contacto__app__form__row__field"
+          placeholder="Ej: 123456789"
+        />
+      </div>
+      <div class="contacto__app__form__row">
+        <label for="message" class="contacto__app__form__row__label"
+          >Mensaje <span class="asterisco">*</span>
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          class="contacto__app__form__row__field__message"
+          placeholder="¿Qué necesitas?"
+          rows="8"
+          cols="30"
+          required
+        >
+        </textarea>
+      </div>
+      <div class="contacto__app__form__row">
+        <input
+          type="submit"
+          value="Enviar"
+          class="contacto__app__form__row__field__button"
+        />
+      </div>
+    </form>
+  </div>
+</section>
