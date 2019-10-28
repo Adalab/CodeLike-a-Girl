@@ -1,0 +1,52 @@
+/* FORMULARIO/APPLICATION */
+
+.app {
+  justify-content: center;
+  text-align: center;
+}
+.app__form {
+}
+.app__row {
+}
+
+.app__row + .app__row {
+}
+
+/* > FIELDS */
+.app__label {
+  display: block;
+  margin: 0 0 0 15px;
+  justify-content: left;
+  text-align: left;
+}
+.app__field {
+  /* background-color: hotpink; */
+  font: inherit;
+  border: 1px solid grey;
+  margin: 5px 15px 15px 15px;
+  height: 45px;
+  min-width: 290px;
+  padding-left: 15px;
+}
+/* Checkear la altura, anchura y padding-top: añadida etiqueta style en el html */
+#message {
+  padding-top: 15px;
+  max-width: 290px;
+  min-height: 105px;
+  overflow: scroll;
+}
+
+/* comprobar margin top de 15px */
+.app__button {
+  background-color: #099d8ebd;
+  font: inherit;
+  text-transform: uppercase;
+  border-radius: 0.25em;
+  cursor: pointer;
+  min-width: 290px;
+  min-height: 45px;
+  margin: 15px 15px 60px 15px;
+}
+.input {
+  -webkit-appearance: none;
+}
