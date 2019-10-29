@@ -4,21 +4,24 @@
       <label for="fullName" class="contact__app__form__row__label">Nombre completo <span class="asterisk">*</span> </label>
       <input type="text" id="fullName" name="fullName" class="contact__app__form__row__field" placeholder="Nombre..." required />
     </div>
-    <div class="contact__app__form__row">
-      <label for="emailAddress" class="contact__app__form__row__label">Email <span class="asterisk">*</span> </label>
-      <input type="email" id="emailAddress" name="emailAddress" class="contact__app__form__row__field" placeholder="nombre.apellidos@mail.com" required />
-    </div>
-    <div class="contact__app__form__row">
-      <label for="telephone" class="contact__app__form__row__label">Teléfono </label>
-      <!-- checkear -->
-      <input type="tel" id="telephone" name="telephone" class="contact__app__form__row__field" placeholder="Ej: 123456789" />
+    <div class="contact__app__form__row__et">
+      <div class="contact__app__form__row">
+        <label for="emailAddress" class="contact__app__form__row__label">Email <span class="asterisk">*</span> </label>
+        <input type="email" id="emailAddress" name="emailAddress" class="contact__app__form__row__field__emailAddress" placeholder="nombre.apellidos@mail.com" required />
+      </div>
+      <div class="contact__app__form__row">
+        <label for="telephone" class="contact__app__form__row__label">Teléfono </label>
+        <input type="tel" id="telephone" name="telephone" class="contact__app__form__row__field" placeholder="Ej: 123456789" />
+      </div>
     </div>
     <div class="contact__app__form__row">
       <label for="message" class="contact__app__form__row__label">Mensaje <span class="asterisk">*</span> </label>
       <textarea id="message" name="message" class="contact__app__form__row__field__message" placeholder="¿Qué necesitas?" rows="8" cols="30" required> </textarea>
     </div>
     <div class="contact__app__form__row">
-      <input type="submit" value="Enviar" class="contact__app__form__row__field__button" />
+      <div class="contact__app__form__row__submitBox">
+        <input type="submit" value="Enviar" class="contact__app__form__row__field__button" />
+      </div>
     </div>
   </form>
 </div>

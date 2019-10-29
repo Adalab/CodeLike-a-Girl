@@ -3,13 +3,16 @@
 }
 
 .contact {
+  margin: 0 25%;
+
   @media all and (min-width: 1200px) {
-    margin: auto 25%;
+    margin: 0 25%;
   }
 
   &__app {
     justify-content: center;
     text-align: center;
+
     &__form {
       margin: 0 15px;
 
@@ -19,15 +22,24 @@
           text-align: left;
         }
         &__field {
-          font: inherit;
           border: 1px solid grey;
-          margin: 5px 15px 15px 15px;
+          margin: 5px 0 15px 0;
           height: 45px;
           width: 100%;
           padding-left: 15px;
 
+          &__emailAddress {
+            border: 1px solid grey;
+            margin: 5px 0 15px 0;
+            height: 45px;
+            width: 100%;
+            padding-left: 15px;
+            @media all and (min-width: 1200px) {
+              min-width: 350px;
+            }
+          }
           &__message {
-            margin: 5px 15px 15px 15px;
+            margin: 5px 0 15px 0;
             padding-top: 15px;
             padding-left: 15px;
             width: 100%;
@@ -41,7 +53,22 @@
             min-width: 290px;
             min-height: 45px;
             margin: 15px 15px 60px 15px;
+            @media all and (min-width: 1200px) {
+              margin: 15px 0 60px auto;
+            }
           }
+        }
+        &__et {
+          @media all and (min-width: 1200px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+        }
+        &__submitBox {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
         }
       }
     }
