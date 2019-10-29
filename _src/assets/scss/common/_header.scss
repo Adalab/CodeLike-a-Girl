@@ -1,4 +1,4 @@
-.header__menu {
+.header {
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -8,52 +8,53 @@
   background-color: #099d8d;
   z-index: 999;
   opacity: 0.9;
-}
-.header__menu__items {
-  display: inline;
-  margin: 10px;
-  font-weight: bold;
-  font-family: "Rubik-Medium", "sans-serif";
-  font-size: 15px;
-}
-.logo {
-  margin: 5px 0 0 10px;
-}
-.header__menu__nav {
-  position: relative;
-  top: 20px;
-}
-.link {
-  color: #a1ca9b;
-  text-decoration: none;
-}
-.link:hover {
-  color: #eb636b;
-}
 
-@media all and (max-width: 768px) {
-  .header__menu {
+  @media all and (max-width: 768px) {
     justify-content: center;
-    position: fixed;
-    width: 100vw;
-    height: 60px;
-    background-color: #099d8d;
   }
-  .header__menu__nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    position: fixed;
-    width: 100vw;
-    height: 45px;
-    top: 60px;
-    background-color: #14d9c4;
-  }
-  .header__menu__items {
-    color: white;
-    margin: 10px;
-    font-size: 16px;
+
+  &__nav {
+    position: relative;
+    top: 19px;
+
+    @media all and (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      position: fixed;
+      width: 100vw;
+      height: 45px;
+      top: 60px;
+      background-color: #14d9c4;
+    }
+
+    &__items {
+      display: inline;
+      margin: 10px;
+      font-weight: bold;
+      font-family: "Rubik-Medium", "sans-serif";
+      font-size: 15px;
+
+      @media all and (max-width: 768px) {
+        color: white;
+        margin: 10px;
+        font-size: 16px;
+      }
+    }
+
+    .logo {
+      margin: 5px 0 0 10px;
+    }
+
+    .link {
+      color: #a1ca9b;
+      text-decoration: none;
+
+      &hover {
+        color: #eb636b;
+      }
+    }
   }
 
   .link {
@@ -65,31 +66,5 @@
   }
   ul {
     padding: 0%;
-  }
-}
-
-@media all and (min-width: 768px) and (max-width: 1200px) {
-  .header__menu {
-    justify-content: space-between;
-    position: fixed;
-    width: 100vw;
-    height: 60px;
-    background-color: #099d8d;
-  }
-
-  .header__menu__nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    color: white;
-    position: fixed;
-    width: 100vw;
-    height: 35px;
-    top: 60px;
-    background-color: #14d9c4;
-  }
-  .link {
-    color: white;
-    text-decoration: none;
   }
 }
