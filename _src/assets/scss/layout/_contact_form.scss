@@ -3,6 +3,10 @@
 }
 
 .contact {
+  @media all and (min-width: 1200px) {
+    margin: auto 25%;
+  }
+
   &__app {
     justify-content: center;
     text-align: center;
