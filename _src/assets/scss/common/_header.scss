@@ -8,15 +8,16 @@
   background-color: #099d8d;
   z-index: 999;
   opacity: 0.9;
+  padding: 5px 0 0 20px;
 
   @media all and (max-width: 768px) {
     justify-content: center;
-    align-items: center;
   }
 
   &__nav {
     position: relative;
-    top: 19px;
+    top: 15px;
+    margin-right: 30px;
 
     @media all and (max-width: 768px) {
       display: flex;
