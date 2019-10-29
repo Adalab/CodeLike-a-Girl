@@ -45,6 +45,7 @@
     }
     &__link {
       color: #099d8d;
+
       &:hover {
         color: #fabada;
       }
@@ -55,8 +56,10 @@
     @media all and (min-width: 768px) {
       flex-direction: row-reverse;
       .aboutus__container__bio {
+        align-items: flex-end;
+        padding: 35px 30px 0 0;
         &__paragraph {
-          background: red;
+          text-align: right;
         }
       }
     }
