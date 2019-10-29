@@ -8,10 +8,12 @@
   &__paragraph {
     grid-column-start: span 6;
     text-align: center;
+    margin: 30px auto 20px auto;
   }
   &__menu {
     grid-column-start: span 6;
     text-align: center;
+    margin-top: 30px;
     &__ul {
       padding: 0;
       &__li {
