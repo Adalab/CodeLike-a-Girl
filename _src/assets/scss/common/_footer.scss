@@ -1,6 +1,13 @@
 .footer {
   color: #b8b8b9;
+  border-top: solid 1px #54585a;
   display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  &__paragraph {
+    grid-column-start: span 12;
+  }
 }
 
 // .footer {
