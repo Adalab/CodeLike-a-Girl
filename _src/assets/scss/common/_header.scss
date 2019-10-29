@@ -23,12 +23,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      color: white;
       position: fixed;
       width: 100vw;
       height: 45px;
       top: 60px;
       background-color: #14d9c4;
+      left: 0px;
     }
 
     &__items {
@@ -57,12 +57,11 @@
       color: #a1ca9b;
       text-decoration: none;
 
+      &:hover {
+        color: #eb636b;
+      }
       @media all and (max-width: 768px) {
         color: white;
-      }
-
-      &hover {
-        color: #eb636b;
       }
     }
   }
