@@ -2,11 +2,28 @@
   color: #b8b8b9;
   border-top: solid 1px #54585a;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 20% 60% 40%;
 
   &__paragraph {
-    grid-column-start: span 12;
+    grid-column-start: span 6;
+    text-align: center;
+  }
+  &__menu {
+    grid-column-start: span 6;
+    text-align: center;
+    &__ul {
+      padding: 0;
+      &__li {
+        &__link {
+          text-decoration: none;
+          color: #54585a;
+        }
+      }
+    }
+  }
+  &__logo {
+    grid-column-start: span 6;
   }
 }
 
