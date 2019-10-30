@@ -20,7 +20,7 @@
 .sw {
   &__detail {
     box-sizing: border-box;
-    background-color: white;
+    background-color: $thirdColor;
     width: 27px;
     height: 27px;
     margin: auto;
@@ -37,7 +37,7 @@
     align-items: center;
     position: relative;
     width: 100%;
-    background-color: #f1f1f1;
+    background-color: $seventhColor;
     text-align: center;
 
     @media all and (min-width: 768px) {
@@ -55,7 +55,7 @@
       }
 
       &__title {
-        color: #099d8d;
+        color: $mainColor;
         text-align: center;
       }
     }

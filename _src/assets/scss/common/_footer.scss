@@ -1,6 +1,6 @@
 .footer {
-  color: #b8b8b9;
-  border-top: solid 1px #54585a;
+  color: $sixthColor;
+  border-top: solid 1px $fifthColor;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 30% 35% 55%;
@@ -22,7 +22,7 @@
         list-style-type: none;
         &__link {
           text-decoration: none;
-          color: #54585a;
+          color: $fifthColor;
         }
       }
     }

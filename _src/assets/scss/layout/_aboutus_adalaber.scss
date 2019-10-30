@@ -35,7 +35,7 @@
       margin: 0 0 15px 0;
     }
     &__paragraph {
-      color: #54585a;
+      color: $fifthColor;
       @media all and (min-width: 768px) {
         text-align: left;
       }
@@ -44,10 +44,10 @@
       }
     }
     &__link {
-      color: #099d8d;
+      color: $mainColor;
 
       &:hover {
-        color: #fabada;
+        color: $hoverIconColor;
       }
     }
   }
@@ -81,7 +81,7 @@
 .dot {
   height: 3px;
   width: 3px;
-  background-color: black;
+  background-color: $fourthColor;
   border-radius: 50%;
   display: inline-block;
   margin-bottom: 3px;
