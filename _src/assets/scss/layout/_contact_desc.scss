@@ -1,14 +1,16 @@
 .asterisk {
-  color: #14d9c5c9;
+  color: #14d9c4;
 }
 
 .contact {
+  font-family: "Rubik-Medium", "sans-serif";
   &__box {
     margin: 30px auto 15px auto;
     text-transform: uppercase;
 
     &__title {
-      color: #099d8ebd;
+      color: #099d8d;
+      font-weight: bold;
       justify-content: center;
       text-align: center;
     }

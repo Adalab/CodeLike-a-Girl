@@ -1,14 +1,16 @@
 .asterisk {
-  color: #14d9c5c9;
+  color: #14d9c4;
 }
 
 .contact {
-  margin: 0 25%;
-
-  @media all and (min-width: 1200px) {
-    margin: 0 25%;
+  margin: 0 15px;
+  font-family: "Rubik-Medium", "sans-serif";
+  @media all and (min-width: 768px) {
+    margin: 0 163px;
   }
-
+  @media all and (min-width: 1200px) {
+    margin: 0 300px;
+  }
   &__app {
     justify-content: center;
     text-align: center;
@@ -22,14 +24,14 @@
           text-align: left;
         }
         &__field {
-          border: 1px solid grey;
+          border: 1px solid #b8b8b9;
           margin: 5px 0 15px 0;
           height: 45px;
           width: 100%;
           padding-left: 15px;
 
           &__emailAddress {
-            border: 1px solid grey;
+            border: 1px solid #b8b8b9;
             margin: 5px 0 15px 0;
             height: 45px;
             width: 100%;
@@ -47,12 +49,18 @@
             overflow: scroll;
           }
           &__button {
-            background-color: #099d8ebd;
+            color: #ffffff;
+            font-weight: bold;
+            background-color: #099d8d;
             text-transform: uppercase;
             border-radius: 0.25em;
-            min-width: 290px;
             min-height: 45px;
-            margin: 15px 15px 60px 15px;
+            width: 100%;
+            margin: 15px auto 60px auto;
+            @media all and (min-width: 768px) {
+              min-width: 290px;
+              width: auto;
+            }
             @media all and (min-width: 1200px) {
               margin: 15px 0 60px auto;
             }
