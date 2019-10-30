@@ -51,7 +51,7 @@
     }
   }
 
-  &:nth-child(even) {
+  &:nth-child(odd) {
     @media all and (min-width: 768px) {
       flex-direction: row-reverse;
       .aboutus__container__bio {

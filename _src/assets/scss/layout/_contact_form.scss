@@ -1,10 +1,10 @@
 .asterisk {
-  color: #14d9c4;
+  color: $secondaryColor;
 }
 
 .contact {
   margin: 0 15px;
-  font-family: "Rubik-Medium", "sans-serif";
+  font-family: $secondaryFontFamily;
   @media all and (min-width: 768px) {
     margin: 0 163px;
   }
@@ -24,14 +24,14 @@
           text-align: left;
         }
         &__field {
-          border: 1px solid #b8b8b9;
+          border: 1px solid $sixthColor;
           margin: 5px 0 15px 0;
           height: 45px;
           width: 100%;
           padding-left: 15px;
 
           &__emailAddress {
-            border: 1px solid #b8b8b9;
+            border: 1px solid $sixthColor;
             margin: 5px 0 15px 0;
             height: 45px;
             width: 100%;
@@ -49,9 +49,9 @@
             overflow: scroll;
           }
           &__button {
-            color: #ffffff;
+            color: $thirdColor;
             font-weight: bold;
-            background-color: #099d8d;
+            background-color: $mainColor;
             text-transform: uppercase;
             border-radius: 0.25em;
             min-height: 45px;

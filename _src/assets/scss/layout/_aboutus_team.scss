@@ -53,6 +53,16 @@
         padding: 45px 0 60px 0;
         height: 372px;
       }
+      @media all and (min-width: 1200px) {
+        padding: 45px 0 0 0;
+        height: 300px;
+      }
+
+      &__text {
+        @media all and (min-width: 768px) {
+          margin: 0 20px;
+        }
+      }
 
       &__title {
         color: $mainColor;
