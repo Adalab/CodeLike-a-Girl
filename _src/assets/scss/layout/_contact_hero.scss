@@ -1,3 +1,12 @@
 .hero__section {
   background-image: url("../images/contact_slide.jpg");
+
+  @keyframes jump {
+    from {
+      background-image: url("../images/slide_hover.jpg");
+    }
+    to {
+      background-image: url("../images/contact_slide.jpg");
+    }
+  }
 }

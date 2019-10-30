@@ -9,6 +9,22 @@
   z-index: 999;
   opacity: 0.9;
   padding: 5px 0 0 20px;
+  animation-name: flash;
+  animation-duration: 3s;
+  animation-iteration-count: initial;
+
+  @keyframes flash {
+    from {
+      background-color: #099d8d;
+    }
+
+    50% {
+      background-color: #54585a;
+    }
+    to {
+      background-color: #099d8d;
+    }
+  }
 
   @media all and (max-width: 768px) {
     justify-content: center;
@@ -52,7 +68,6 @@
         margin: 0px;
       }
     }
-
     .link {
       color: #a1ca9b;
       text-decoration: none;

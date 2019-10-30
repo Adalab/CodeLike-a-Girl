@@ -4,7 +4,19 @@
   background-repeat: no-repeat;
   background-position: top;
   position: relative;
+  animation-name: jump;
+  animation-duration: 4s;
+  animation-iteration-count: initial;
 
+  @keyframes jump {
+    from {
+      background-image: url("../images/slide_hover.jpg");
+      /* transform: translateY(-10%); */
+    }
+    to {
+      background-image: url("../images/slide.jpg");
+    }
+  }
   @media all and (max-width: 768px) {
     height: 316px;
   }
