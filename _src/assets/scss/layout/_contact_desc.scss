@@ -1,15 +1,15 @@
 .asterisk {
-  color: #14d9c4;
+  color: $secondaryColor;
 }
 
 .contact {
-  font-family: "Rubik-Medium", "sans-serif";
+  font-family: $secondaryFontFamily;
   &__box {
     margin: 30px auto 15px auto;
     text-transform: uppercase;
 
     &__title {
-      color: #099d8d;
+      color: $mainColor;
       font-weight: bold;
       justify-content: center;
       text-align: center;
