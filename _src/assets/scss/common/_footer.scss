@@ -1,19 +1,22 @@
 .footer {
   color: #b8b8b9;
-  border-top: solid 1px #54585a;
+  font-size: 14px;
+  border-top: solid 0.5px #b8b8b9;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 30% 35% 55%;
+  grid-template-rows: 67px 64px 120px;
 
   @media all and (min-width: 768px) and (max-width: 1200px) {
-    grid-template-rows: 1fr 1fr;
+    height: 170px;
     padding-top: 30px;
     padding-bottom: 60px;
   }
 
   &__paragraph {
     grid-column-start: span 3;
-    margin: 30px auto 20px auto;
+    align-self: center;
+    justify-self: center;
+    // margin: 30px auto 20px auto;
     @media all and (min-width: 768px) and (max-width: 1200px) {
       grid-column: 1;
       margin: 0 auto 15px 8vw;
@@ -25,6 +28,7 @@
     justify-self: center;
     @media all and (min-width: 768px) and (max-width: 1200px) {
       grid-column: 3;
+      grid-row: span 2;
     }
 
     &__ul {
@@ -42,6 +46,7 @@
         list-style-type: none;
         &__link {
           text-decoration: none;
+          font-weight: 600;
           color: #54585a;
         }
       }
@@ -57,7 +62,7 @@
     &__adalab {
       width: 115.9px;
       height: 45px;
-      margin: 30px auto 45px auto;
+      // margin: 30px auto 45px auto;
       @media all and (min-width: 768px) and (max-width: 1200px) {
         margin: 0 0 0 8vw;
         display: flex;
