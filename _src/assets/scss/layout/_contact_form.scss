@@ -1,50 +1,84 @@
-.app {
-  justify-content: center;
-  text-align: center;
-}
-.app__form {
-}
-.app__row {
+.asterisk {
+  color: #14d9c4;
 }
 
-.app__row + .app__row {
-}
+.contact {
+  margin: 0 15px;
+  font-family: "Rubik-Medium", "sans-serif";
+  @media all and (min-width: 768px) {
+    margin: 0 163px;
+  }
+  @media all and (min-width: 1200px) {
+    margin: 0 300px;
+  }
+  &__app {
+    justify-content: center;
+    text-align: center;
 
-/* > FIELDS */
-.app__label {
-  display: block;
-  margin: 0 0 0 15px;
-  justify-content: left;
-  text-align: left;
-}
-.app__field {
-  /* background-color: hotpink; */
-  font: inherit;
-  border: 1px solid grey;
-  margin: 5px 15px 15px 15px;
-  height: 45px;
-  min-width: 290px;
-  padding-left: 15px;
-}
-/* Checkear la altura, anchura y padding-top: añadida etiqueta style en el html */
-#message {
-  padding-top: 15px;
-  max-width: 290px;
-  min-height: 105px;
-  overflow: scroll;
-}
+    &__form {
+      margin: 0 15px;
 
-/* comprobar margin top de 15px */
-.app__button {
-  background-color: $mainColor;
-  font: inherit;
-  text-transform: uppercase;
-  border-radius: 0.25em;
-  cursor: pointer;
-  min-width: 290px;
-  min-height: 45px;
-  margin: 15px 15px 60px 15px;
-}
-.input {
-  -webkit-appearance: none;
+      &__row {
+        &__label {
+          display: block;
+          text-align: left;
+        }
+        &__field {
+          border: 1px solid #b8b8b9;
+          margin: 5px 0 15px 0;
+          height: 45px;
+          width: 100%;
+          padding-left: 15px;
+
+          &__emailAddress {
+            border: 1px solid #b8b8b9;
+            margin: 5px 0 15px 0;
+            height: 45px;
+            width: 100%;
+            padding-left: 15px;
+            @media all and (min-width: 1200px) {
+              min-width: 350px;
+            }
+          }
+          &__message {
+            margin: 5px 0 15px 0;
+            padding-top: 15px;
+            padding-left: 15px;
+            width: 100%;
+            min-height: 105px;
+            overflow: scroll;
+          }
+          &__button {
+            color: #ffffff;
+            font-weight: bold;
+            background-color: #099d8d;
+            text-transform: uppercase;
+            border-radius: 0.25em;
+            min-height: 45px;
+            width: 100%;
+            margin: 15px auto 60px auto;
+            @media all and (min-width: 768px) {
+              min-width: 290px;
+              width: auto;
+            }
+            @media all and (min-width: 1200px) {
+              margin: 15px 0 60px auto;
+            }
+          }
+        }
+        &__et {
+          @media all and (min-width: 1200px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+        }
+        &__submitBox {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
 }
