@@ -78,6 +78,11 @@
           text-decoration: none;
           font-weight: 600;
           color: #54585a;
+          transition: color 0.5s ease-in-out;
+
+          &:hover {
+            color: #eb636b;
+          }
         }
       }
     }
@@ -86,6 +91,7 @@
     grid-column-start: span 3;
     align-self: center;
     justify-self: center;
+
     @media all and (min-width: 768px) and (max-width: 1200px) {
       grid-column: 1;
       align-self: flex-start;
