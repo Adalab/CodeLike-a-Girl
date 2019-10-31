@@ -44,6 +44,7 @@
     }
     &__link {
       color: $mainColor;
+      text-decoration: none;
 
       &:hover {
         color: $hoverIconColor;
