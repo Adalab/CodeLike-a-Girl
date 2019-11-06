@@ -3,7 +3,7 @@
 }
 
 .contact {
-  font-family: $secondaryFontFamily;
+  font-family: $mainFontFamily;
   &__box {
     margin: 30px auto 15px auto;
     text-transform: uppercase;
@@ -13,6 +13,7 @@
       font-weight: bold;
       justify-content: center;
       text-align: center;
+      font-family: $secondaryFontFamily;
     }
   }
   &__text {

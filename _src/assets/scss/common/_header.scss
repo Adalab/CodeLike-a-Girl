@@ -51,8 +51,6 @@
       display: inline;
       margin: 10px;
       font-weight: bold;
-      font-family: $secondaryFontFamily;
-      font-size: 15px;
 
       @media all and (max-width: 768px) {
         color: $thirdColor;
@@ -72,9 +70,11 @@
       color: $navColor;
       text-decoration: none;
       transition: color 0.5s ease-in-out;
+      font-family: $secondaryFontFamily;
+      font-size: 15px;
 
       &:hover {
-        color: $navHoverColor;
+        color: $hoverIconColor;
       }
       @media all and (max-width: 768px) {
         color: $thirdColor;
