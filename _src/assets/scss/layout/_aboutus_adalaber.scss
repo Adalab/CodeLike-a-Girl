@@ -12,7 +12,7 @@
     height: 180px;
     background-size: contain;
     border-radius: 10px;
-    border: 5px solid $sixthColor;
+    border: 5px solid rgba(0, 0, 0, 0.15);
     margin: 30px 0 15px 0;
     @media all and (min-width: 768px) {
       width: 205px;
@@ -97,7 +97,7 @@
 @keyframes marco {
   55% {
     border-radius: 50% 0 50% 0;
-    border: 3px solid $mainColor;
+    border: 3px solid rgba(61, 158, 141, 0.5);
   }
   100% {
     border-radius: 0 50% 0 50%;
