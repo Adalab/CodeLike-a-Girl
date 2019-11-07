@@ -22,6 +22,14 @@
       width: 278px;
       height: 278px;
     }
+    &:hover {
+      animation-name: marco;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+      animation-direction: linear;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards;
+    }
   }
   &__bio {
     @media all and (min-width: 768px) {
@@ -85,4 +93,14 @@
   border-radius: 50%;
   display: inline-block;
   margin-bottom: 3px;
+}
+@keyframes marco {
+  55% {
+    border-radius: 50% 0 50% 0;
+    border: 3px solid $mainColor;
+  }
+  100% {
+    border-radius: 0 50% 0 50%;
+    border: 0;
+  }
 }
